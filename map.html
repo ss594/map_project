@@ -23,11 +23,11 @@ var markerPos = new kakao.maps.LatLng(33.450701, 126.570667);// 마커가 표시
 var marker = new kakao.maps.Marker({position: markerPos});// 마커를 생성
 function setCenter(lat, lng)
 {
-    marker.setMap(null)
-    var mp = new kakao.maps.LatLng(lat,Lng)
-    map.setCenter(mp)
-    marker = new kakao.maps.Marker({posiotion:mp})
-    marker.setMap(map)
+    marker.setMap(null);
+    var mp = new kakao.maps.LatLng(lat,lng);
+    map.setCenter(mp);
+    marker = new kakao.maps.Marker({posiotion:mp});
+    marker.setMap(map);    
 }
 
 </script>
