@@ -20,13 +20,13 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-var markerPos = new kakao.maps.Laslng(33.450701, 126.570667)
+var markerPos = new kakao.maps.LasLng(33.450701, 126.570667)
 var marker = new kakao.maps.Marker( {position:markerPos} )
 function setCenter(lat, lng) // 마커 설정
 {
     marker.setmap(null)
     var mp = new kakao.maps.LatLng(lat,lng)
-    map.setcenter(mp)
+    map.setCenter(mp)
     marker = new kakao.maps.Marker({position:mp})
     marker.setMap(map) // 지도에 세팅
 }
